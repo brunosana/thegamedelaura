@@ -9,11 +9,8 @@ public class controllerNPC : MonoBehaviour
     float velocidade =  2;
     Rigidbody2D rb2d;
     bool isMoving;
-    public static bool canMove;
-    public static void setcanMove(bool a) { canMove = a; }
     void Awake()
     {
-        canMove = true;
         isMoving = false;
         rb2d = GetComponent<Rigidbody2D>();
         Animador = GetComponent<Animator>();
@@ -24,10 +21,9 @@ public class controllerNPC : MonoBehaviour
         Animador.SetBool("sul", false);
     }
 
-
     void Update()
     {
-        if (!isMoving && canMove) {
+        if (!isMoving) {
             StartCoroutine(NPCmove());
         }
 
@@ -57,12 +53,5 @@ public class controllerNPC : MonoBehaviour
         isMoving = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            dialogSystem.start = true;
-        }
 
-    }
 }

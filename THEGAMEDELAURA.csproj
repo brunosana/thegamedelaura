@@ -304,7 +304,6 @@
     <Compile Include="Assets\Scripts\controllerMenuSound.cs" />
     <Compile Include="Assets\Scripts\controllerNPC.cs" />
     <Compile Include="Assets\Scripts\controllerPlayer.cs" />
-    <Compile Include="Assets\Scripts\dialogSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\bruno\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
