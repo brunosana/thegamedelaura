@@ -304,6 +304,12 @@
     <Compile Include="Assets\Scripts\controllerMenuSound.cs" />
     <Compile Include="Assets\Scripts\controllerNPC.cs" />
     <Compile Include="Assets\Scripts\controllerPlayer.cs" />
+    <Compile Include="Assets\Scripts\dialogue.cs" />
+    <Compile Include="Assets\Scripts\enterMansion.cs" />
+    <Compile Include="Assets\Scripts\gameManager.cs" />
+    <Compile Include="Assets\Scripts\outMansion.cs" />
+    <Compile Include="Assets\Scripts\pickKey.cs" />
+    <Compile Include="Assets\Scripts\showMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\bruno\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />

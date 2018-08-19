@@ -1,18 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class controllerPlayer : MonoBehaviour {
-
-	Animator Animador;
+    Animator Animador;
+    Transform laua;
 	public float velocidade;
 	Rigidbody2D rb2d;
 	void Awake () {
 		rb2d = GetComponent<Rigidbody2D>();
 		Animador = GetComponent<Animator>();
+        laua = GetComponent<Transform>();
+        if (!gameManager.hasInMansion && Application.loadedLevelName.Equals("map_outhome")) { laua.transform.position = new Vector3(-0.4f, 16.8f, 0); }
 	}
 	
-	void Update () {
+	void Update () {        
 		Animador.SetBool("parado",true);
 		Animador.SetBool("esquerda",false);
 		Animador.SetBool("direita",false);
